@@ -2,19 +2,17 @@ import Image from 'next/image';
 import { Search } from './Search';
 import { Dorpdowns } from './Dropdowns';
 import Link from 'next/link';
+import styles from '@/styles/headers.module.css';
 
 export const Headers = () => {
   return (
     <header className="flex flex-col w-full">
-      <section className="flex justify-between bg-sky-100 text-purple-950 items-center">
-        <div>
-          <p>numero</p>
+      <section className="flex w-full bg-sky-100 text-purple-950 items-center ">
+        <div className="ml-20 pl-2 w-66 font-bold italic">
+          <p>Contato: (85) 9 92399-9504</p>
         </div>
-        <div>
-          <p>promoção </p>
-        </div>
-        <div>
-          <p>rastreio de pedido</p>
+        <div className={styles.numero}>
+          <p>PROMOÇÃO NOS PERSONALIZADOS</p>
         </div>
       </section>
       <section className="flex justify-around bg-indigo-700 text-white py-1.5 items-center">
@@ -51,6 +49,7 @@ export const Headers = () => {
               />
             </svg>
           </Link>
+          <Link href="#">rastreiar pedido</Link>
         </div>
       </section>
     </header>
