@@ -1,38 +1,53 @@
 import Image from 'next/image';
 import { Search } from './Search';
-import { Dorpdowns } from './Dropdowns';
+import { Dropdowns } from './Dropdowns';
 import Link from 'next/link';
 import styles from '@/styles/headers.module.css';
 
 export const Headers = () => {
   return (
     <header className="flex flex-col w-full">
-      <section className="flex w-full bg-sky-100 text-purple-950 items-center ">
-        <div className="ml-20 pl-2 w-66 font-bold italic">
-          <p>Contato: (85) 9 92399-9504</p>
+      <section className="flex w-full bg-slate-100  items-center ">
+        <div className="flex ml-20 pl-2 w-66 font-bold italic  text-black">
+          <p className="mr-4">Contato: (85) 9 92399-9504</p>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            strokeWidth={1.5}
+            stroke="currentColor"
+            className="w-6 h-6"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"
+            />
+          </svg>
         </div>
         <div className={styles.numero}>
           <p>PROMOÇÃO NOS PERSONALIZADOS</p>
         </div>
       </section>
       <section className="flex justify-around bg-indigo-700 text-white py-1.5 items-center">
-        <div className="flex justify-between w-1/2 border border-white items-center">
-          <Image
-            src="/issets/imageHeaders/logoWhiteSemfundo.png"
-            width={100}
-            height={100}
-            alt="Logo VPapel"
-          />
+        <div className="flex justify-between w-1/2 items-center">
+          <Link href="/">
+            <Image
+              src="/issets/imageHeaders/logoWhiteSemfundo.png"
+              width={100}
+              height={100}
+              alt="Logo VPapel"
+            />
+          </Link>
           <Search />
         </div>
 
         <div>
           <nav>
-            <Dorpdowns />
+            <Dropdowns />
           </nav>
         </div>
-        <div className="flex items-center justify-between  w-20">
-          <Image src="/issets/imageHeaders/instagram.png" width={35} height={35} />
+        <div className="flex items-center justify-between  w-64 ">
           <Link href="#">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -49,7 +64,29 @@ export const Headers = () => {
               />
             </svg>
           </Link>
-          <Link href="#">rastreiar pedido</Link>
+          <Link
+            href="#"
+            className="flex px-1 border w-42  items-center rounded-md text-indigo-700 bg-white font-bold"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              strokeWidth={1.5}
+              stroke="currentColor"
+              className="w-6 h-6 mr-3"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M8.25 18.75a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m3 0h6m-9 0H3.375a1.125 1.125 0 01-1.125-1.125V14.25m17.25 4.5a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m3 0h1.125c.621 0 1.129-.504 1.09-1.124a17.902 17.902 0 00-3.213-9.193 2.056 2.056 0 00-1.58-.86H14.25M16.5 18.75h-2.25m0-11.177v-.958c0-.568-.422-1.048-.987-1.106a48.554 48.554 0 00-10.026 0 1.106 1.106 0 00-.987 1.106v7.635m12-6.677v6.677m0 4.5v-4.5m0 0h-12"
+              />
+            </svg>
+            Rastrear pedido
+          </Link>
+          <Link href="https://www.instagram.com/vpapelll/">
+            <Image src="/issets/imageHeaders/instagram.png" width={35} height={35} />
+          </Link>
         </div>
       </section>
     </header>

@@ -1,15 +1,26 @@
-import Link from 'next/link';
+'use client';
 
-export const Dorpdowns = () => {
+import Link from 'next/link';
+import { useState } from 'react';
+
+export const Dropdowns = () => {
+  const [brindes, setBrindes] = useState(false);
+  const [person, setPerson] = useState(false);
+  const [papelaria, setPapelaria] = useState(false);
+  const [menu, setMenu] = useState(false);
+
+  const show = () => {};
+
   return (
     <div className="relative inline-block text-left">
       <div>
         <button
           type="button"
-          className="inline-flex w-40 justify-evenly gap-x-1.5 rounded-full bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50 border border-white"
+          className="text-base inline-flex w-40 justify-evenly gap-x-1.5 rounded-full bg-white px-3 py-1  font-bold text-indigo-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50 border border-white"
           id="menu-button"
           aria-expanded="true"
           aria-haspopup="true"
+          onClick={() => setMenu(!menu)}
         >
           Produtos
           <svg
@@ -40,20 +51,29 @@ export const Dorpdowns = () => {
       To: "transform opacity-0 scale-95"
   --> */}
       <div
-        className="absolute  right-0 left-0 z-10 mt-2 w-50 origin-top-right rounded-md bg-sky-50 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"
+        className={
+          menu
+            ? ' absolute right-0 left-0 z-10 mt-2 w-50 origin-top-right rounded-md bg-sky-50 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none'
+            : 'hidden'
+        }
         role="menu"
         aria-orientation="vertical"
         aria-labelledby="menu-button"
         tabIndex="-1"
       >
         <div className="py-1" role="none">
-          {/* <!-- Active: "bg-gray-100 text-gray-900", Not Active: "text-gray-700" --> */}
+          {/* <!-- brindes: "bg-gray-100 text-gray-900", Not brindes: "text-gray-700" --> */}
           <Link
             href="#"
-            className="text-gray-700 px-4 py-2 text-sm flex"
+            className={
+              brindes
+                ? 'bg-indigo-700 text-white px-4 py-2 text-sm flex'
+                : 'text-gray-900 px-4 py-2 text-sm flex'
+            }
             role="menuitem"
             tabIndex="-1"
             id="menu-item-0"
+            onClick={() => setBrindes(!brindes)}
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -73,10 +93,15 @@ export const Dorpdowns = () => {
           </Link>
           <Link
             href="#"
-            className="text-gray-700 flex px-4 py-2 text-sm"
+            className={
+              person
+                ? 'bg-indigo-700 text-white px-4 py-2 text-sm flex'
+                : 'text-gray-900 px-4 py-2 text-sm flex'
+            }
             role="menuitem"
             tabIndex="-1"
             id="menu-item-1"
+            onClick={() => setPerson(!person)}
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -96,10 +121,15 @@ export const Dorpdowns = () => {
           </Link>
           <Link
             href="#"
-            className="text-gray-700 flex px-4 py-2 text-sm"
+            className={
+              papelaria
+                ? 'bg-indigo-700 text-white px-4 py-2 text-sm flex'
+                : 'text-gray-900 px-4 py-2 text-sm flex'
+            }
             role="menuitem"
             tabIndex="-1"
             id="menu-item-2"
+            onClick={() => setPapelaria(!papelaria)}
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
