@@ -16,7 +16,7 @@ export const Dropdowns = () => {
       <div>
         <button
           type="button"
-          className="text-base inline-flex w-40 justify-evenly gap-x-1.5 rounded-full bg-white px-3 py-1  font-bold text-indigo-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50 border border-white"
+          className="text-base inline-flex w-40 justify-evenly gap-x-1.5 rounded-full bg-white px-3 py-1  font-bold text-indigo-900 shadow-sm ring-1 ring-inset ring-gray-300 border border-white hover:bg-indigo-600 hover:text-white"
           id="menu-button"
           aria-expanded="true"
           aria-haspopup="true"
@@ -65,11 +65,11 @@ export const Dropdowns = () => {
           {/* <!-- brindes: "bg-gray-100 text-gray-900", Not brindes: "text-gray-700" --> */}
           <Link
             href="#"
-            className={
+            className={`${
               brindes
                 ? 'bg-indigo-700 text-white px-4 py-2 text-sm flex'
                 : 'text-gray-900 px-4 py-2 text-sm flex'
-            }
+            } hover:bg-indigo-700 hover:text-white`}
             role="menuitem"
             tabIndex="-1"
             id="menu-item-0"
@@ -93,11 +93,11 @@ export const Dropdowns = () => {
           </Link>
           <Link
             href="#"
-            className={
+            className={`${
               person
                 ? 'bg-indigo-700 text-white px-4 py-2 text-sm flex'
                 : 'text-gray-900 px-4 py-2 text-sm flex'
-            }
+            } hover:bg-indigo-700 hover:text-white`}
             role="menuitem"
             tabIndex="-1"
             id="menu-item-1"
@@ -121,11 +121,11 @@ export const Dropdowns = () => {
           </Link>
           <Link
             href="#"
-            className={
+            className={`${
               papelaria
                 ? 'bg-indigo-700 text-white px-4 py-2 text-sm flex'
                 : 'text-gray-900 px-4 py-2 text-sm flex'
-            }
+            } hover:bg-indigo-700 hover:text-white`}
             role="menuitem"
             tabIndex="-1"
             id="menu-item-2"
