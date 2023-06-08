@@ -2,7 +2,7 @@ import styles from '@/styles/headers.module.css';
 
 export const Search = () => {
   return (
-    <div className="w-1/2 border border-white bg-white rounded-full pl-6 h-10 flex items-center justify-between">
+    <div className="w-full border border-white bg-white rounded-full pl-6 h-10 flex items-center justify-between">
       <input
         type="text"
         name="search"
