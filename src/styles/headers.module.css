@@ -1,11 +1,11 @@
 
-.numero {
+.promo {
     display: flex;
     justify-content: space-between;
     animation-delay: 0s;
     position: relative;
     animation-name: example;
-    animation-duration: 10s;
+    animation-duration: 5s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
     animation-direction: alternate;
@@ -26,11 +26,11 @@
 
 @keyframes example {
     0%   { left:0px; top:0px;}
-    100% { left:50%; top:0px;}
+    100% { left:35%; top:0px;}
 }
 
 .inputSearch {
-    width: 15rem; 
+    width: 100%; 
     color: black;
     height: 100%;
     font-size: large;
@@ -39,3 +39,4 @@
 .inputSearch:focus{
     outline: none;
 }
+

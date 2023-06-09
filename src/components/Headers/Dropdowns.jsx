@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 import { useState } from 'react';
+import RastrearPedido from './RastrearPedido';
 
 export const Dropdowns = () => {
   const [brindes, setBrindes] = useState(false);
@@ -12,76 +13,38 @@ export const Dropdowns = () => {
   const show = () => {};
 
   return (
-    <div className="relative inline-block text-left">
-      {/* Dropdown Desktop */}
-      <div className="lg:block hidden">
-        <button
-          type="button"
-          className="text-base inline-flex w-40 justify-evenly gap-x-1.5 rounded-full bg-white px-3 py-1  font-bold text-indigo-900 shadow-sm ring-1 ring-inset ring-gray-300 border border-white hover:bg-indigo-600 hover:text-white"
-          id="menu-button"
-          aria-expanded="true"
-          aria-haspopup="true"
-          onClick={() => setMenu(!menu)}
-        >
-          <p className="">Produtos</p>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            strokeWidth={1.5}
-            stroke="currentColor"
-            className="w-6 h-6"
+    <nav>
+      <div className="relative inline-block text-left">
+        <div className="">
+          <button
+            type="button"
+            className="text-base inline-flex justify-evenly gap-x-1.5 rounded-full bg-white px-3 py-1  font-bold text-indigo-900 shadow-sm ring-1 ring-inset ring-gray-300 border border-white hover:bg-indigo-600 hover:text-white"
+            id="menu-button"
+            aria-expanded="true"
+            aria-haspopup="true"
+            onClick={() => setMenu(!menu)}
           >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              d="M3 4.5h14.25M3 9h9.75M3 13.5h9.75m4.5-4.5v12m0 0l-3.75-3.75M17.25 21L21 17.25"
-            />
-          </svg>
-        </button>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              strokeWidth={1.5}
+              stroke="currentColor"
+              className="w-6 h-6"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M3 4.5h14.25M3 9h9.75M3 13.5h9.75m4.5-4.5v12m0 0l-3.75-3.75M17.25 21L21 17.25"
+              />
+            </svg>
+          </button>
+        </div>
       </div>
-
-      {/* Dropdown mobile */}
-      <div className="lg:hidden">
-        <button
-          type="button"
-          className="text-base inline-flex w-30 justify-evenly gap-x-1.5 rounded-full bg-white px-3 py-1  font-bold text-indigo-900 shadow-sm ring-1 ring-inset ring-gray-300 border border-white hover:bg-indigo-600 hover:text-white"
-          id="menu-button"
-          aria-expanded="true"
-          aria-haspopup="true"
-          onClick={() => setMenu(!menu)}
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            strokeWidth={1.5}
-            stroke="currentColor"
-            className="w-6 h-6"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              d="M3 4.5h14.25M3 9h9.75M3 13.5h9.75m4.5-4.5v12m0 0l-3.75-3.75M17.25 21L21 17.25"
-            />
-          </svg>
-        </button>
-      </div>
-
-      {/* <!--
-    Dropdown menu, show/hide based on menu state.
-
-    Entering: "transition ease-out duration-100"
-      From: "transform opacity-0 scale-95"
-      To: "transform opacity-100 scale-100"
-    Leaving: "transition ease-in duration-75"
-      From: "transform opacity-100 scale-100"
-      To: "transform opacity-0 scale-95"
-  --> */}
       <div
         className={
           menu
-            ? ' absolute right-0 left-0 z-10 mt-2 w-50 origin-top-right rounded-md bg-sky-50 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none'
+            ? ' absolute sm:left-2/3 lg:left-3/4 left-2/4 right-1 sm:w-48 w-44 z-10 mt-2  origin-top-right rounded-md bg-sky-50 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none'
             : 'hidden'
         }
         role="menu"
@@ -175,8 +138,11 @@ export const Dropdowns = () => {
             </svg>
             Papelaria
           </Link>
+          <div className="w-full sm:hidden block">
+            <RastrearPedido />
+          </div>
         </div>
       </div>
-    </div>
+    </nav>
   );
 };

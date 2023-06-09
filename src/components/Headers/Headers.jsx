@@ -3,13 +3,15 @@ import { Search } from './Search';
 import { Dropdowns } from './Dropdowns';
 import Link from 'next/link';
 import styles from '@/styles/headers.module.css';
+import CarrinhoHeader from './CarrinhoHeader';
+import RastrearPedido from './RastrearPedido';
 
 export const Headers = () => {
   return (
     <header className="flex flex-col w-full">
-      <section className=" w-full flex justify-center bg-slate-100 ">
+      <section className=" w-full sm:flex justify-center bg-slate-100 hidden">
         <div className="flex items-center w-4/5">
-          <div className="flex ml-20 pl-2 w-66 font-bold italic  text-black ">
+          <div className="flex  pl-2 text-sm sm:w-66 font-bold italic  text-black ">
             <p className="mr-4">Contato: (85) 9 92399-9504</p>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -17,7 +19,7 @@ export const Headers = () => {
               viewBox="0 0 24 24"
               strokeWidth={1.5}
               stroke="currentColor"
-              className="w-6 h-6"
+              className="w-5 h-5"
             >
               <path
                 strokeLinecap="round"
@@ -26,67 +28,31 @@ export const Headers = () => {
               />
             </svg>
           </div>
-          <div className={styles.numero}>
+          <div className={styles.promo}>
             <p>PROMOÇÃO NOS PERSONALIZADOS</p>
           </div>
         </div>
       </section>
-      <section className="bg-indigo-700 text-white py-1.5 flex justify-center">
-        <div className="flex justify-between items-center w-4/5">
-          <div className="flex w-3/6  items-center">
+      <section className="bg-indigo-700 text-white py-1.5 flex justify-center ">
+        <div className="flex justify-between items-center w-full lg:w-4/5 mx-2.5">
+          <div className="flex items-center w-3/4 sm:w-3/5 lg:w-4/6 witems-center ">
             <Link href="/">
               <Image
                 src="/issets/imageHeaders/logoWhiteSemfundo.png"
                 width={100}
                 height={100}
                 alt="Logo VPapel"
-                className="mr-20"
+                className="mr-10 h-11 w-20"
               />
             </Link>
             <Search />
           </div>
-          <div>
-            <nav>
-              <Dropdowns />
-            </nav>
-          </div>
-          <div className="flex items-center justify-between  w-64 ">
-            <Link href="#">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                strokeWidth={1.5}
-                stroke="currentColor"
-                className="w-6 h-6"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z"
-                />
-              </svg>
-            </Link>
-            <Link
-              href="#"
-              className="flex px-1 border w-42  items-center rounded-md text-indigo-700 bg-white font-bold"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                strokeWidth={1.5}
-                stroke="currentColor"
-                className="w-6 h-6 mr-3"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M8.25 18.75a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m3 0h6m-9 0H3.375a1.125 1.125 0 01-1.125-1.125V14.25m17.25 4.5a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m3 0h1.125c.621 0 1.129-.504 1.09-1.124a17.902 17.902 0 00-3.213-9.193 2.056 2.056 0 00-1.58-.86H14.25M16.5 18.75h-2.25m0-11.177v-.958c0-.568-.422-1.048-.987-1.106a48.554 48.554 0 00-10.026 0 1.106 1.106 0 00-.987 1.106v7.635m12-6.677v6.677m0 4.5v-4.5m0 0h-12"
-                />
-              </svg>
-              Rastrear pedido
-            </Link>
+          <div className="flex items-center justify-between  sm:w-72 lg:w-80 w-24  ">
+            <CarrinhoHeader />
+            <div className="sm:block hidden sm:w-42">
+              <RastrearPedido />
+            </div>
+            <Dropdowns />
           </div>
         </div>
       </section>
