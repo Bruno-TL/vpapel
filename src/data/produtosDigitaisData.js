@@ -6,9 +6,11 @@ export const ProdutosDigitaisData = () => {
       cor: 'VAriados',
       customizable: true,
       description: 'Material para criação ...',
-      price: 'R$ 50,00',
+      price: '50,00',
       available: true,
       size: 'Variados',
+      url: '/issets/imageProdutos/teste.png',
+      minimumOrder: false,
     },
   ];
 

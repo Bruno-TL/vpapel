@@ -1,21 +1,30 @@
-import { CanecasData } from '@/data/canecasData';
-import { AdesivoData } from '@/data/adesivosData';
-import { BrindesData } from '@/data/brindesData';
-import { CamisasCustomData } from '@/data/camisasCustomData';
-import { Camisas } from '@/data/camisasData';
-import { EmbalagemData } from '@/data/embalagemData';
-import { PapelariaData } from '@/data/papelariaData';
-import { ProdutosDigitaisData } from '@/data/produtosDigitaisData';
+import { Canecas } from './Produto/Canecas';
+import { Adesivos } from './Produto/Adesivos';
+import { Brindes } from './Produto/Brindes';
+import { Camisas } from './Produto/Camisas';
+import { Papelaria } from './Produto/Papelaria';
+import { CamisasCustom } from './Produto/CamisasCustom';
+import { Embalagem } from './Produto/Embalagem';
+import { ProdutosDigitais } from './Produto/ProdutosDigitais';
 
 export default function Produtos() {
-  const canecas = CanecasData();
-  const adesivos = AdesivoData();
-  const brindes = BrindesData();
-  const camisasCustom = CamisasCustomData();
-  const camisas = Camisas();
-  const embalagem = EmbalagemData();
-  const papelaria = PapelariaData();
-  const produtosDigitais = ProdutosDigitaisData();
-
-  return <div>Produtos</div>;
+  return (
+    <section className="bg-white border rounded pb-10">
+      <div className="my-6 pl-5">
+        <h1 className="text-2xl">Produtos populares</h1>
+      </div>
+      <section className="mx-5">
+        <div className="w-full grid gap-4 grid-cols-4 ">
+          <Canecas />
+          <Adesivos />
+          <Brindes />
+          <Camisas />
+          <Papelaria />
+          <CamisasCustom />
+          <Embalagem />
+          <ProdutosDigitais />
+        </div>
+      </section>
+    </section>
+  );
 }

@@ -4,9 +4,12 @@ export const AdesivoData = () => {
       id: '1',
       name: 'Adesivos Personalizaveis',
       customizable: true,
-      desciption: 'Adesivos totalmente personalizável ao seu gosto',
-      price: 'R$ 0,50 unid',
+      description: 'Adesivos totalmente personalizável ao seu gosto',
+      price: '0,50 unid',
+      minimumOrder: '10 unidades',
       size: 'Variáveil',
+      available: true,
+      url: '/issets/imageProdutos/teste.png',
     },
   ];
 

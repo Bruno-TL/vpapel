@@ -6,9 +6,11 @@ export const PapelariaData = () => {
       cor: 'Variada',
       customizable: true,
       description: 'Bíblia customizada',
-      price: 'R$ 60,00',
+      price: '60,00',
       available: true,
       size: 'Variados',
+      url: '/issets/imageProdutos/teste.png',
+      minimumOrder: false,
     },
   ];
 

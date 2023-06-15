@@ -9,6 +9,8 @@ export const EmbalagemData = () => {
       price: 'R$ 20,00',
       available: true,
       size: 'Variados',
+      url: '/issets/imageProdutos/teste.png',
+      minimumOrder: '10 unidades',
     },
   ];
 

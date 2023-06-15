@@ -1,4 +1,4 @@
-export const Camisas = () => {
+export const CamisasData = () => {
   const camisas = [
     {
       id: '1',
@@ -6,9 +6,11 @@ export const Camisas = () => {
       cor: 'Branca',
       customizable: false,
       description: 'Camisa para você que é doido por games.',
-      price: 'R$ 80,00',
+      price: '80,00',
       available: true,
       size: 'P | M | G',
+      url: '/issets/imageProdutos/teste.png',
+      minimumOrder: false,
     },
   ];
 
