@@ -9,7 +9,7 @@ import { ProdutosDigitais } from './Produto/ProdutosDigitais';
 
 export default function Produtos() {
   return (
-    <section className="bg-white border rounded pb-10">
+    <section className="bg-white border rounded-md pb-10">
       <div className="my-6 pl-5">
         <h1 className="text-2xl">Produtos populares</h1>
       </div>
