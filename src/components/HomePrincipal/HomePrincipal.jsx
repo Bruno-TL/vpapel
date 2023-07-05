@@ -25,9 +25,7 @@ export default function Home() {
           alt="Imagem de exibição"
         />
       </div>
-      <section className="mx-auto md:w-4/5 w-full">
-        <ProvaSocial />
-      </section>
+      <section className="mx-auto md:w-4/5 w-full"></section>
     </>
   );
 }
