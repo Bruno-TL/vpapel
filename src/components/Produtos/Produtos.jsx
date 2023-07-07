@@ -14,7 +14,7 @@ export default function Produtos() {
         <h1 className="text-2xl">Produtos populares</h1>
       </div>
       <section className="mx-5">
-        <div className="w-full grid gap-4 grid-cols-4 ">
+        <div className="w-full grid gap-4 xl:grid-cols-4 lg:grid-cols-3 grid-cols-2">
           <Canecas />
           <Adesivos />
           <Brindes />

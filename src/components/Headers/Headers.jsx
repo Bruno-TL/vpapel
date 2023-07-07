@@ -8,9 +8,9 @@ import RastrearPedido from './RastrearPedido';
 
 export const Headers = () => {
   return (
-    <header className="flex flex-col w-full">
-      <section className=" w-full sm:flex justify-center bg-slate-100 hidden">
-        <div className="flex items-center w-4/5">
+    <header className="flex flex-col w-full topo">
+      <section className=" w-full sm:flex justify-center bg-slate-100 hidden ">
+        <div className="flex items-center w-4/5 ">
           <div className="flex  pl-2 text-sm sm:w-66 font-bold italic  text-black ">
             <p className="mr-4">Contato: (85) 9 92399-9504</p>
             <svg
@@ -42,7 +42,7 @@ export const Headers = () => {
                 width={100}
                 height={100}
                 alt="Logo VPapel"
-                className="mr-10 h-11 w-20"
+                className="mr-10 h-11 w-20 lg:h-16 lg:w-24"
               />
             </Link>
             <Search />

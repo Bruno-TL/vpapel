@@ -16,7 +16,7 @@ export const Papelaria = () => {
                 <span className="text-lg ">R$</span> {papelaria.price}
               </p>
               {papelaria.minimumOrder && <p>pedido mínimo {papelaria.minimumOrder}</p>}
-              <p className="text-indigo-900">Tamanhos: {papelaria.size}</p>
+              {papelaria.size && <p className="text-indigo-900">Tamanhos: {papelaria.size}</p>}
             </div>
           </div>
         </div>

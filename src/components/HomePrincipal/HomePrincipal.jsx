@@ -7,7 +7,7 @@ export default function Home() {
     <>
       <div className="mx-auto md:w-4/5 w-full">
         <Image
-          src="/issets/imageHome/imgMain.png"
+          src="/issets/imageHome/imgHome.png"
           width={1080}
           height={1080}
           className="mx-auto lg:px-5 my-4"
@@ -18,7 +18,7 @@ export default function Home() {
 
       <div className="bg-indigo-700 w-full py-5 my-2">
         <Image
-          src="/issets/imageHome/VPapellImg2.png"
+          src="/issets/imageHome/VPapellImgDown.png"
           width={1315}
           height={417}
           className="mx-auto lg:px-5 "

@@ -16,7 +16,7 @@ export const Embalagem = () => {
                 <span className="text-lg ">R$</span> {embalagem.price}
               </p>
               {embalagem.minimumOrder && (
-                <p className="text-indigo-900">Pedido mínimo {embalagem.minimumOrder}</p>
+                <p className="text-indigo-900">{embalagem.minimumOrder}</p>
               )}
             </div>
           </div>

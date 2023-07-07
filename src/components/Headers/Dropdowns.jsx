@@ -57,10 +57,8 @@ export const Dropdowns = () => {
           <Link
             href="#"
             className={`${
-              brindes
-                ? 'bg-indigo-700 text-white px-4 py-2 text-sm flex'
-                : 'text-gray-900 px-4 py-2 text-sm flex'
-            } hover:bg-indigo-700 hover:text-white`}
+              brindes ? 'bg-indigo-700 text-white ' : 'text-gray-900 '
+            } hover:bg-indigo-700 hover:text-white font-semibold px-4 py-2 text-sm flex`}
             role="menuitem"
             tabIndex="-1"
             id="menu-item-0"
@@ -77,66 +75,11 @@ export const Dropdowns = () => {
               <path
                 strokeLinecap="round"
                 strokeLinejoin="round"
-                d="M21 11.25v8.25a1.5 1.5 0 01-1.5 1.5H5.25a1.5 1.5 0 01-1.5-1.5v-8.25M12 4.875A2.625 2.625 0 109.375 7.5H12m0-2.625V7.5m0-2.625A2.625 2.625 0 1114.625 7.5H12m0 0V21m-8.625-9.75h18c.621 0 1.125-.504 1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125h-18c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125z"
+                d="M9.568 3H5.25A2.25 2.25 0 003 5.25v4.318c0 .597.237 1.17.659 1.591l9.581 9.581c.699.699 1.78.872 2.607.33a18.095 18.095 0 005.223-5.223c.542-.827.369-1.908-.33-2.607L11.16 3.66A2.25 2.25 0 009.568 3z"
               />
+              <path strokeLinecap="round" strokeLinejoin="round" d="M6 6h.008v.008H6V6z" />
             </svg>
-            Brindes
-          </Link>
-          <Link
-            href="#"
-            className={`${
-              person
-                ? 'bg-indigo-700 text-white px-4 py-2 text-sm flex'
-                : 'text-gray-900 px-4 py-2 text-sm flex'
-            } hover:bg-indigo-700 hover:text-white`}
-            role="menuitem"
-            tabIndex="-1"
-            id="menu-item-1"
-            onClick={() => setPerson(!person)}
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              strokeWidth={1.5}
-              stroke="currentColor"
-              className="w-6 h-6 mr-4"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M9.53 16.122a3 3 0 00-5.78 1.128 2.25 2.25 0 01-2.4 2.245 4.5 4.5 0 008.4-2.245c0-.399-.078-.78-.22-1.128zm0 0a15.998 15.998 0 003.388-1.62m-5.043-.025a15.994 15.994 0 011.622-3.395m3.42 3.42a15.995 15.995 0 004.764-4.648l3.876-5.814a1.151 1.151 0 00-1.597-1.597L14.146 6.32a15.996 15.996 0 00-4.649 4.763m3.42 3.42a6.776 6.776 0 00-3.42-3.42"
-              />
-            </svg>
-            Personalizados
-          </Link>
-          <Link
-            href="#"
-            className={`${
-              papelaria
-                ? 'bg-indigo-700 text-white px-4 py-2 text-sm flex'
-                : 'text-gray-900 px-4 py-2 text-sm flex'
-            } hover:bg-indigo-700 hover:text-white`}
-            role="menuitem"
-            tabIndex="-1"
-            id="menu-item-2"
-            onClick={() => setPapelaria(!papelaria)}
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              strokeWidth={1.5}
-              stroke="currentColor"
-              className="w-6 h-6 mr-6"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M8.25 7.5V6.108c0-1.135.845-2.098 1.976-2.192.373-.03.748-.057 1.123-.08M15.75 18H18a2.25 2.25 0 002.25-2.25V6.108c0-1.135-.845-2.098-1.976-2.192a48.424 48.424 0 00-1.123-.08M15.75 18.75v-1.875a3.375 3.375 0 00-3.375-3.375h-1.5a1.125 1.125 0 01-1.125-1.125v-1.5A3.375 3.375 0 006.375 7.5H5.25m11.9-3.664A2.251 2.251 0 0015 2.25h-1.5a2.251 2.251 0 00-2.15 1.586m5.8 0c.065.21.1.433.1.664v.75h-6V4.5c0-.231.035-.454.1-.664M6.75 7.5H4.875c-.621 0-1.125.504-1.125 1.125v12c0 .621.504 1.125 1.125 1.125h9.75c.621 0 1.125-.504 1.125-1.125V16.5a9 9 0 00-9-9z"
-              />
-            </svg>
-            Papelaria
+            Produtos
           </Link>
           <div className="w-full sm:hidden block">
             <RastrearPedido />

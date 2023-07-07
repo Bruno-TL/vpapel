@@ -5,7 +5,7 @@ export default function RastrearPedido() {
     <div className="">
       <Link
         href="#"
-        className="flex px-1 border w-full text-lg items-center rounded-md sm:text-indigo-800 text-white sm:bg-white bg-indigo-700 h-8 bg-font-extrabold"
+        className="flex px-1 border-2 font-semibold w-full md:text-lg text-sm items-center rounded-md sm:text-indigo-800 text-white sm:bg-white bg-indigo-700 h-8 md:bg-font-extrabold hover:border-indigo-800 transition duration-700 ease-in-out"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
