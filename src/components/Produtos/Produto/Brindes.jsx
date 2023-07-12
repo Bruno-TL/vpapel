@@ -7,7 +7,7 @@ export const Brindes = () => {
     <>
       {brindes.map((brinde) => (
         <div key={brinde.id} className="bg-indigo-100  border rounded-lg">
-          <Image src={brinde.url} width={200} height={200} className="mx-auto" />
+          <Image src={brinde.url} width={200} height={200} className="mx-auto mt-4 rounded-lg" />
           <div className="text-center mt-3">
             <h2 className="font-bold">{brinde.name}</h2>
             <p>{brinde.description}</p>

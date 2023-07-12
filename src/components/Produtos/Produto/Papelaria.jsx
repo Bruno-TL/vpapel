@@ -7,7 +7,7 @@ export const Papelaria = () => {
     <>
       {papelarias.map((papelaria) => (
         <div key={papelaria.id} className="bg-indigo-100  border rounded-lg">
-          <Image src={papelaria.url} width={200} height={200} className="mx-auto" />
+          <Image src={papelaria.url} width={200} height={200} className="mx-auto mt-4 rounded-lg" />
           <div className="text-center mt-3">
             <h2 className="font-bold">{papelaria.name}</h2>
             <p>{papelaria.description}</p>

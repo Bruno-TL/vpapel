@@ -7,7 +7,12 @@ export const ProdutosDigitais = () => {
     <>
       {produtosDigitais.map((produtoDgital) => (
         <div key={produtoDgital.id} className="bg-indigo-100  border rounded-lg">
-          <Image src={produtoDgital.url} width={200} height={200} className="mx-auto" />
+          <Image
+            src={produtoDgital.url}
+            width={200}
+            height={200}
+            className="mx-auto mt-4 rounded-lg"
+          />
           <div className="text-center mt-3">
             <h2 className="font-bold">{produtoDgital.name}</h2>
             <p>{produtoDgital.description}</p>

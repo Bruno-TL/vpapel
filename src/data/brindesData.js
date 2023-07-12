@@ -2,15 +2,15 @@ export const BrindesData = () => {
   const brindes = [
     {
       id: '1',
-      name: 'Combos de brindes',
+      name: 'Mini Lixa de unha personalizada',
       cor: 'Variável',
       customizable: true,
-      description: 'Aquele brinde que a sua equipe ou turma vai amar !',
+      description: 'Mini lixa personalizada, com logo e redes sociais .',
       available: true,
       size: 'Variado',
-      price: '59,99',
-      set: 'Copo + chaveiro',
-      url: '/issets/imageProdutos/teste.png',
+      price: '1,00',
+      set: 'Cada',
+      url: '/issets/imageProdutos/lixa/lixaPersonl.png',
       minimumOrder: false,
     },
   ];

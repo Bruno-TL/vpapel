@@ -7,7 +7,7 @@ export const Adesivos = () => {
     <>
       {adesivos.map((adesivo) => (
         <div key={adesivo.id} className="bg-indigo-100  border rounded-lg">
-          <Image src={adesivo.url} width={200} height={200} className="mx-auto" />
+          <Image src={adesivo.url} width={200} height={200} className="mx-auto mt-4 rounded-lg" />
           <div className="text-center mt-3">
             <h2 className="font-bold">{adesivo.name}</h2>
             <p>{adesivo.description}</p>

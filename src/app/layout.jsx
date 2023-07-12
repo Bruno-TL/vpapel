@@ -33,25 +33,18 @@ export const metadata = {
       'Explore nosso site e descubra o poder da personalização. Deixe sua criatividade fluir e confie em nós para fornecer produtos personalizados de alta qualidade que farão toda a diferença.',
     url: 'https://vpapell.com',
     siteName: 'VPapell',
-    images: [
-      {
-        url: 'https://vpapell.com/imgSEO',
-        width: 800,
-        height: 600,
-      },
-    ],
-    locale: 'en_US',
+    locale: 'pt_BR',
     type: 'website',
-    robots: {
-      index: false,
-      follow: true,
-      nocache: true,
-    },
-    viewport: {
-      width: 'device-width',
-      initialScale: 1,
-      maximumScale: 1,
-    },
+  },
+  robots: {
+    index: false,
+    follow: true,
+    nocache: true,
+  },
+  viewport: {
+    width: 'device-width',
+    initialScale: 1,
+    maximumScale: 1,
   },
 };
 

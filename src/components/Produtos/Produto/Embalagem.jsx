@@ -7,7 +7,7 @@ export const Embalagem = () => {
     <>
       {embalagems.map((embalagem) => (
         <div key={embalagem.id} className="bg-indigo-100  border rounded-lg">
-          <Image src={embalagem.url} width={200} height={200} className="mx-auto" />
+          <Image src={embalagem.url} width={200} height={200} className="mx-auto mt-4 rounded-lg" />
           <div className="text-center mt-3">
             <h2 className="font-bold">{embalagem.name}</h2>
             <p>{embalagem.description}</p>

@@ -34,8 +34,8 @@ export const Headers = () => {
         </div>
       </section>
       <section className="bg-indigo-700 text-white py-1.5 flex justify-center ">
-        <div className="flex justify-between items-center w-full lg:w-4/5 mx-2.5">
-          <div className="flex items-center w-3/4 sm:w-3/5 lg:w-4/6 witems-center ">
+        <div className="flex  items-center w-full lg:w-4/5 mx-2.5">
+          <div className="flex items-center w-3/4 sm:w-3/5 lg:w-4/6 justify-center ">
             <Link href="/">
               <Image
                 src="/issets/imageHeaders/logoWhiteSemfundo.png"
@@ -45,7 +45,7 @@ export const Headers = () => {
                 className="mr-10 h-11 w-20 lg:h-16 lg:w-24"
               />
             </Link>
-            <Search />
+            {/* <Search /> */}
           </div>
           <div className="flex items-center justify-between  sm:w-72 lg:w-80 w-24  ">
             <CarrinhoHeader />
