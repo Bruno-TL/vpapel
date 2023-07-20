@@ -12,11 +12,9 @@ export default function Produtos() {
       </div>
       <section className="mx-5">
         <div className="w-full grid gap-4 xl:grid-cols-4 lg:grid-cols-3 grid-cols-2">
-          <Adesivos />
           <Brindes />
           <Papelaria />
           <Embalagem />
-          <ProdutosDigitais />
         </div>
       </section>
     </section>
