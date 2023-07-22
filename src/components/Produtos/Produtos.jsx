@@ -1,10 +1,14 @@
+'use client';
 import { Adesivos } from './Produto/Adesivos';
 import { Brindes } from './Produto/Brindes';
 import { Papelaria } from './Produto/Papelaria';
 import { Embalagem } from './Produto/Embalagem';
 import { ProdutosDigitais } from './Produto/ProdutosDigitais';
+import { useData } from '@/hooks/useData';
 
 export default function Produtos() {
+  const test = useData();
+  console.log(test);
   return (
     <section className="bg-white border rounded-md pb-10">
       <div className="my-6 pl-5">
