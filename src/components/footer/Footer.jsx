@@ -31,7 +31,7 @@ export default function Footer() {
             <RastrearPedido />
           </div>
 
-          <div className="mt-10 w-24 h-24 border rounded-full border-indigo-950 hover:bg-indigo-800 hover:text-white transition duration-700 ease-in-out md:bg-white text-center flex justify-center items-center flex-col animate-ping bg-sky-400 ">
+          <div className="mt-10 w-36 py-2  border rounded-lg border-indigo-950 hover:bg-indigo-800 hover:text-white transition duration-700 ease-in-out md:bg-white text-center flex justify-center items-center bg-sky-400 ">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -46,7 +46,7 @@ export default function Footer() {
                 d="M4.5 12.75l7.5-7.5 7.5 7.5m-15 6l7.5-7.5 7.5 7.5"
               />
             </svg>
-            <Link href="#topo" className="text-sm w-16">
+            <Link href="#topo" className="text-sm ">
               Voltar ao topo
             </Link>
           </div>

@@ -1,10 +1,10 @@
 'use client';
 import { createContext } from 'react';
-import { EmbalagemData } from '@/data/embalagemData';
+import { ProdutosData } from '../produtos';
 
-const embalagems = EmbalagemData();
+const produtos = ProdutosData();
 export const DataProdutosContext = createContext();
 
 export function DataContextProvider({ children }) {
-  return <DataProdutosContext.Provider value={embalagems}>{children}</DataProdutosContext.Provider>;
+  return <DataProdutosContext.Provider value={produtos}>{children}</DataProdutosContext.Provider>;
 }
