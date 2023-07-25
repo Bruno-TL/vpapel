@@ -4,7 +4,7 @@ export default function RastrearPedido() {
   return (
     <div className="">
       <Link
-        href="#"
+        href="https://rastreamento.correios.com.br/app/index.php"
         className="flex px-1 border-2 font-semibold w-full md:text-lg text-sm items-center rounded-md text-indigo-800  bg-white  h-8 md:bg-font-extrabold hover:border-indigo-800 border-indigo-800 lg:border-transparent transition duration-700 ease-in-out"
       >
         <svg

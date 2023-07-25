@@ -1,10 +1,6 @@
 import Image from 'next/image';
-import { Search } from './Search';
-import { Dropdowns } from './Dropdowns';
 import Link from 'next/link';
 import styles from '@/styles/headers.module.css';
-import CarrinhoHeader from './CarrinhoHeader';
-import RastrearPedido from './RastrearPedido';
 
 export const Headers = () => {
   return (
