@@ -213,7 +213,7 @@ export const ProdutosData = () => {
       price: '70,00',
       available: true,
       size: false,
-      url: '/issets/imageProdutos/bibliaMini/bibliaMinii.png',
+      url: '/issets/imageProdutos/bibliaMini/anoteMiniDevo.png',
       minimumOrder: false,
       linkProduct: 'https://wa.me/p/6198266196909051/558581605010',
     },
