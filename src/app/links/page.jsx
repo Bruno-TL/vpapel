@@ -9,7 +9,7 @@ export default function Links() {
         <section className="sm:w-2/4 flex flex-col items-center mb-8">
           <div className=" mb-2 border-2 rounded-full border-white w-40 h-40 flex items-center justify-center  shadow-2xl shadow-cyan-500/100">
             <Image
-              src="/issets/imageHeaders/logoWhiteSemFundo.png"
+              src="/issets/imageHeaders/vpapelico.png"
               width={100}
               height={100}
               alt="Logo VPapel"
